@@ -10,7 +10,7 @@ import org.apache.spark.SparkContext
 import scala.collection.immutable._
 import scala.collection.mutable.ListBuffer
 
-object HAOuterJoin {
+object Hybrid {
 
   def main(args: Array[String]) {
     val sc = new SparkContext(args(0), "HAOuterJoin", System.getenv("SPARK_HOME"))

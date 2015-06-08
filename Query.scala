@@ -8,10 +8,10 @@ import org.apache.spark.SparkContext._
 import scala.collection.immutable._
 import org.apache.spark.SparkContext
 
-object QC {
+object Query {
 
   def main(args: Array[String]) {
-    val sc = new SparkContext(args(0), "QC", System.getenv("SPARK_HOME"))
+    val sc = new SparkContext(args(0), "Query", System.getenv("SPARK_HOME"))
     var R = sc.textFile(args(1))
     var S = sc.textFile(args(2))
 

@@ -13,7 +13,7 @@ import scala.collection.mutable.ListBuffer
 object Hybrid {
 
   def main(args: Array[String]) {
-    val sc = new SparkContext(args(0), "HAOuterJoin", System.getenv("SPARK_HOME"))
+    val sc = new SparkContext(args(0), "Hybrid", System.getenv("SPARK_HOME"))
     var R = sc.textFile(args(1))
     var S = sc.textFile(args(2))
     val K = args(3).toInt //top K skewed keys
